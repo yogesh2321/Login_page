@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .form-group input[type="submit"]:focus {
+      outline: none;
+    }
+
+    .form-group a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .form-group a:hover {
+      color: #2980b9;
+    }
+
+    .social-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-buttons button {
+      padding: 10px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-buttons button.google {
+      background-color: #dd4b39;
+      color: #fff;
+    }
+
+    .social-buttons button.linkedIn {
+      background-color: #1411bd;
+      color: #fff;
+    }
+
+    .social-buttons button.facebook {
+      background-color: #3b5998;
+      color: #fff;
+
+    }
+
+    .social-buttons button.github {
+      background-color: #0000008e;
+      color: #fff;
+    }
+
+    .social-buttons button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Please Login to Continue</h2>
+    <div style="display: flex; justify-content: center; margin: auto; margin-top: 20px;">
+      <label class="tab-label" for="tab1" style="font-size: 20px; padding: 15px 30px; border-top: 1px solid #0f9d58;">Sign In</label>
+     
+      <label class="tab-label" for="tab2" style="font-size: 20px; background-color: #c3c3c3; padding: 15px 30px;">Sign Up</label>
+  </div>
+    <form class="login-form" style="margin: 30px;" action="#" method="post">
+      <div class="form-group">
+        <input type="text" id="username" name="username" style="padding: 20px;" placeholder="Username or email" />
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" style="padding:20px" required placeholder="Password" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Sign In" style="padding: 15px;"/>
+      </div>
+      <div class="form-group">
+        -----------------------------------------or-----------------------------------------
+      </div>
+      <div class="social-buttons">
+        <button class="google" style="width: 130px;">Google</button>
+        <button class="linkedIn" style="width: 130px;">LinkedIn</button><br><br>
+        <button class="facebook" style="width: 130px;"> Facebook</button>
+        <button class="github" style="width: 130px;">GitHub</button>
+      </div>
+      <br>
+      <div class="form-group">
+        <p class="create-account-text"><span style="color: rgb(29, 130, 29);text-decoration: underline;font-weight: bolder;">Why Create an account</span> </p>
+      </div>
+      <div class="form-group">
+        <a href="#"><p class="grey-text">By creating this account, you agree to our <span style="color: rgb(29, 130, 29);text-decoration: underline;font-weight: bolder;">Policy & Cookie Policy.</span> </p></a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
